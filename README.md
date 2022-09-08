@@ -17,15 +17,21 @@ Special thanks to Coraline of the EDGE team for allowing us to use her [README.m
 ---
 ## How to build GZDoom in Void Linux
 wget https://github.com/void-linux/void-packages/archive/refs/heads/master.zip -O void-packages.zip
+
 unzip void-packages.zip
+
 cd void-packages-master
+
 ./xbps-src binary-bootstrap
+
 leafpad srcpkgs/gzdoom/template
 
 add libvpx-devel in the makedepends, change the version to 4.8.2, save it, then remove the folder patches of gzdoom
 
 ./xbps-src pkg gzdoom
+
 xgensum -i gzdoom
+
 ./xbps-src pkg gzdoom
 
 ## How to build GZDoom
